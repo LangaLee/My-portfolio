@@ -1,0 +1,32 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+body {
+  // background-color: #0c0c1d;
+  background-image: linear-gradient(177deg, #380e21, #070510 17%);
+  color: whitesmoke;
+  padding: 0%;
+  box-sizing: border-box;
+  margin: 0%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #070510;
+}
+* ::-webkit-scrollbar-thumb {
+  background-color: #ff3366;
+}
+
+section {
+  position: static;
+  height: 90vh;
+  scroll-snap-align: center;
+  padding-top: 10vh;
+}
