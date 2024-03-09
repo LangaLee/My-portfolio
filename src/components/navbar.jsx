@@ -3,40 +3,44 @@ import { useState } from "react";
 import NavigationList from "./navigationList";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scaleValue, setScaleValue] = useState(1);
+
   return (
-    <div className="navBar">
+    <div>
       <div>
-        {isOpen ? (
-          <NavigationList
-            setIsOpen={setIsOpen}
-            scale={scaleValue}
-            setScaleValue={setScaleValue}
-          />
-        ) : (
+        {" "}
+        <NavigationList isOpen={isOpen} />{" "}
+      </div>
+      <div className="navBar">
+        <div>
           <button
             className="optionsLink"
             onClick={() => {
-              setIsOpen(true);
-              setScaleValue(0);
+              setIsOpen((prevState) => !prevState);
             }}
           >
-            <div className="options"></div>
-            <div className="options"></div>
-            <div className="options"></div>
+            {isOpen ? (
+              <p className="closeNavList">X</p>
+            ) : (
+              <>
+                <div className="options"></div>
+                <div className="options"></div>
+                <div className="options"></div>
+              </>
+            )}
           </button>
-        )}
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/langa-dlemz/" target="_blank">
-          <button>linkedin</button>
-        </a>
-        <a href="https://www.instagram.com/oldschool_is200/" target="_blank">
-          <button>Instagram</button>
-        </a>
-        <a href="https://github.com/langaLee" target="_blank">
-          <button>Github</button>
-        </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/langa-dlemz/" target="_blank">
+            <button>linkedin</button>
+          </a>
+          <a href="https://www.instagram.com/oldschool_is200/" target="_blank">
+            <button>Instagram</button>
+          </a>
+          <a href="https://github.com/langaLee" target="_blank">
+            <button>Github</button>
+          </a>
+        </div>
       </div>
     </div>
   );
