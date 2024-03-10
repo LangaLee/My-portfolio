@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import "../css files/homePage.scss";
 import { scroll } from "react-scroll";
+import NewsImage from "../../images/Nc news.png";
+import TipperImage from "../../images/Tipper.png";
+
 const HomePage = () => {
   return (
     <div>
@@ -24,17 +27,11 @@ const HomePage = () => {
         <div>
           <Link to={"/Projects/NCNews"} onClick={() => scroll.scrollToTop()}>
             {" "}
-            <img
-              src="../../images/Nc news.png"
-              alt="Nc news homepage screenshot"
-            />
+            <img src={NewsImage} alt="Nc news homepage screenshot" />
           </Link>
           <Link to={"/Projects/Tipper"} onClick={() => scroll.scrollToTop()}>
             {" "}
-            <img
-              src="../../images/Tipper.png"
-              alt="Tipper homepage screenshot"
-            />
+            <img src={TipperImage} alt="Tipper homepage screenshot" />
           </Link>
 
           <Link
