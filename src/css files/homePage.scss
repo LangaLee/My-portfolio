@@ -3,11 +3,11 @@ section {
   height: 90vh;
   scroll-snap-align: center;
   padding-top: 5vh;
+  margin-left: 5vh;
 }
 .introDiv {
   display: flex;
   flex-direction: column;
-
   h1 {
     font-size: 60px;
     margin-bottom: 10px;
@@ -22,21 +22,37 @@ section {
 }
 
 .projects {
+  padding-top: 10vh !important;
   font-size: 50px;
   div {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    h2 {
+      margin-top: 0px;
+    }
+    div {
+      margin-top: 5%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
   }
   img {
     width: 30vw;
     margin-right: 2vw;
   }
   .allProjects {
+    padding: 5px;
     text-decoration: none;
     background-color: #ff3366;
     border-radius: 5px;
     color: #070510;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 10%;
+  }
+  .allProjects:hover {
+    background-color: #070510;
+    color: #ff3366;
   }
 }

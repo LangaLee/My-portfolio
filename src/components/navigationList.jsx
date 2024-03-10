@@ -1,7 +1,7 @@
 import "../css files/navigationList.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { scroll } from "react-scroll";
 const variants = {
   open: {
     clipPath: "circle(1200px at 0px 0px)",
@@ -30,6 +30,7 @@ const NavigationList = ({ isOpen, setIsOpen }) => {
             to={"/"}
             onClick={() => {
               setIsOpen(false);
+              scroll.scrollToTop();
             }}
             className="liItem"
           >

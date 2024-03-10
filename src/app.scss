@@ -34,6 +34,12 @@ body {
   border-radius: 5px;
   text-decoration: none;
   padding: 3px;
+  margin-right: 5px;
+}
+
+.sourceLink:hover {
+  color: #ff3366 !important;
+  background-color: #070510;
 }
 
 .sourceLink:visited {

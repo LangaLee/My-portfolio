@@ -5,14 +5,12 @@ import TipperImage from "../../images/Tipper.png";
 const Projects = () => {
   return (
     <div className="projects">
-      <div>
-        <Link to={"/Projects/NCNews"}>
-          <img src={NewsImage} alt="Nc news homepage screenshot" />
-        </Link>
-        <Link to={"/Projects/Tipper"}>
-          <img src={TipperImage} alt="Tipper homepage screenshot" />
-        </Link>
-      </div>
+      <Link to={"/Projects/NCNews"}>
+        <img src={NewsImage} alt="Nc news homepage screenshot" />
+      </Link>
+      <Link to={"/Projects/Tipper"}>
+        <img src={TipperImage} alt="Tipper homepage screenshot" />
+      </Link>
     </div>
   );
 };

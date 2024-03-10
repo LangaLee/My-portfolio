@@ -5,9 +5,9 @@ const NCNews = () => {
     <div>
       <section className="projectSection">
         <div>
-          <div className="NCNewsDiv">
+          <div className="projectDiv">
             <div>
-              <h2>NC News</h2>
+              <h2 className="projectTitle">NC News</h2>
               <p>
                 This is a web-app that allows users to read articles without
                 making an account. If the user creates an account or logs in

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "../css files/homePage.scss";
-import { scroll } from "react-scroll";
 import NewsImage from "../../images/Nc news.png";
 import TipperImage from "../../images/Tipper.png";
 
@@ -23,28 +22,28 @@ const HomePage = () => {
         </div>
       </section>
       <section className="projects">
-        <h2>Projects</h2>
         <div>
-          <Link to={"/Projects/NCNews"} onClick={() => scroll.scrollToTop()}>
-            {" "}
-            <img src={NewsImage} alt="Nc news homepage screenshot" />
-          </Link>
-          <Link to={"/Projects/Tipper"} onClick={() => scroll.scrollToTop()}>
-            {" "}
-            <img src={TipperImage} alt="Tipper homepage screenshot" />
-          </Link>
+          <h2>Projects</h2>
+          <div>
+            <Link to={"/Projects/NCNews"}>
+              {" "}
+              <img src={NewsImage} alt="Nc news homepage screenshot" />
+            </Link>
+            <Link to={"/Projects/Tipper"}>
+              {" "}
+              <img src={TipperImage} alt="Tipper homepage screenshot" />
+            </Link>
 
-          <Link
-            className="allProjects"
-            to={"/Projects"}
-            onClick={() => scroll.scrollToTop()}
-          >
-            All Projects
-          </Link>
+            <Link
+              className="allProjects"
+              to={"/Projects"}
+              onClick={() => scroll.scrollToTop()}
+            >
+              All Projects
+            </Link>
+          </div>
         </div>
       </section>
-      <section></section>
-      <section>Tipper api</section>
       <section>Tipper</section>
     </div>
   );
