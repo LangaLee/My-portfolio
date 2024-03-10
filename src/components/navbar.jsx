@@ -1,6 +1,7 @@
 import "../css files/navbar.scss";
 import { useState } from "react";
 import NavigationList from "./navigationList";
+import { SocialIcon } from "react-social-icons";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -8,7 +9,7 @@ const Navbar = () => {
     <div>
       <div>
         {" "}
-        <NavigationList isOpen={isOpen} />{" "}
+        <NavigationList isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
       <div className="navBar">
         <div>
@@ -30,16 +31,12 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div>
-          <a href="https://www.linkedin.com/in/langa-dlemz/" target="_blank">
-            <button>linkedin</button>
-          </a>
-          <a href="https://www.instagram.com/oldschool_is200/" target="_blank">
-            <button>Instagram</button>
-          </a>
-          <a href="https://github.com/langaLee" target="_blank">
-            <button>Github</button>
-          </a>
+        <div className="socialLinks">
+          <SocialIcon url="https://www.linkedin.com" target="_blank" />
+
+          <SocialIcon url="https://www.instagram.com" target="_blank" />
+
+          <SocialIcon url="https://www.github.com" target="_blank" />
         </div>
       </div>
     </div>

@@ -23,6 +23,10 @@
 
 .liItem {
   margin-top: 40px;
+  text-decoration: none;
+}
+.liItem:visited {
+  color: #070510;
 }
 
 .liItem:hover {

@@ -1,0 +1,42 @@
+section {
+  margin-left: 2vw;
+  height: 90vh;
+  scroll-snap-align: center;
+  padding-top: 5vh;
+}
+.introDiv {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    width: 60vw;
+  }
+}
+
+.projects {
+  font-size: 50px;
+  div {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 30vw;
+    margin-right: 2vw;
+  }
+  .allProjects {
+    text-decoration: none;
+    background-color: #ff3366;
+    border-radius: 5px;
+    color: #070510;
+    font-size: 30px;
+    margin-left: 10%;
+  }
+}

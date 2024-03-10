@@ -1,5 +1,6 @@
 import "../css files/navigationList.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const variants = {
   open: {
@@ -10,23 +11,30 @@ const variants = {
     },
   },
   closed: {
-    clipPath: "circle(0px at 0px 0px)",
+    clipPath: "circle(0.1px at 0px 0px)",
     transition: {
-      delay: 0.5,
+      delay: 0.2,
       type: "spring",
-      stiffness: 200,
-      damping: 40,
+      stiffness: 300,
+      damping: 50,
     },
   },
 };
 
-const NavigationList = ({ isOpen }) => {
-  console.log(isOpen, variants);
+const NavigationList = ({ isOpen, setIsOpen }) => {
   return (
     <motion.div animate={isOpen ? "open" : "closed"}>
       <motion.div className="navList" variants={variants}>
         <motion.ul className="navListItems">
-          <motion.a className="liItem">HomePage</motion.a>
+          <Link
+            to={"/"}
+            onClick={() => {
+              setIsOpen(false);
+            }}
+            className="liItem"
+          >
+            HomePage
+          </Link>
           <motion.a className="liItem">Plans</motion.a>
           <motion.a className="liItem">Contact</motion.a>
           <motion.a className="liItem">About Me</motion.a>
