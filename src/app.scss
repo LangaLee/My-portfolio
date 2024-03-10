@@ -27,3 +27,15 @@ body {
 * ::-webkit-scrollbar-thumb {
   background-color: #ff3366;
 }
+
+.sourceLink {
+  background-color: #ff3366;
+  color: #070510;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.sourceLink:visited {
+  color: #070510;
+}
