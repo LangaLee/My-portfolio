@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../css files/homePage.scss";
 import NewsImage from "../../images/Nc news.png";
 import TipperImage from "../../images/Tipper.png";
+import Contact from "./contact";
 
 const HomePage = () => {
   return (
@@ -44,7 +45,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section>Tipper</section>
+      <section>
+        <Contact />
+      </section>
     </div>
   );
 };

@@ -56,3 +56,69 @@ section {
     color: #ff3366;
   }
 }
+
+.contactDiv {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10vh;
+  form {
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    // background-color: aqua;
+    label {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    input {
+      color: whitesmoke;
+      background-color: #0d0338;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      padding: 4px;
+    }
+    textarea {
+      color: whitesmoke;
+      background-color: #0d0338;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      padding: 4px;
+    }
+    textarea:focus {
+      outline-width: 0;
+      border: solid;
+      border-radius: 2px;
+      border-color: #ff3366;
+    }
+    input:focus {
+      outline-width: 0;
+      border: solid;
+      border-radius: 2px;
+      border-color: #ff3366;
+    }
+
+    .messageInput {
+      height: 20%;
+    }
+
+    div {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      button {
+        color: #070510;
+        background-color: #ff3366;
+        border: none;
+        border-radius: 5px;
+        width: 70px;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
