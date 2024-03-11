@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1500px) {
+  div {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  section {
+    height: 100vh;
+  }
+}

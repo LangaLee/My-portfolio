@@ -2,6 +2,7 @@ import "../css files/navigationList.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { scroll } from "react-scroll";
+import cv from "../../Langa Dlamini CV.pdf";
 const variants = {
   open: {
     clipPath: "circle(1200px at 0px 0px)",
@@ -36,18 +37,26 @@ const NavigationList = ({ isOpen, setIsOpen }) => {
           >
             HomePage
           </Link>
-          <Link className="liItem">Plans</Link>
           <Link
-            to={"/"}
+            to={"/skills"}
             onClick={() => {
               setIsOpen(false);
-              scroll.scrollToBottom();
             }}
             className="liItem"
           >
-            Contact
+            Skills
           </Link>
-          <motion.a className="liItem">About Me</motion.a>
+          <a
+            href={cv}
+            onClick={() => {
+              setIsOpen(false);
+            }}
+            className="liItem"
+            download
+          >
+            Download CV
+          </a>
+          <motion.a className="liItem">Contact</motion.a>
         </motion.ul>
       </motion.div>
     </motion.div>

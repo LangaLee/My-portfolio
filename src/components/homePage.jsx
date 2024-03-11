@@ -12,26 +12,26 @@ const HomePage = () => {
           <h1>Langa Dlamini</h1>
           <h2>Junior Software Developer</h2>
           <p>
-            I am a passionate Junior Software Developer looking for a role in
-            the tech industry. Problem solving is a skill I have always valued,
-            and software development provides diverse avenues to apply it.
-            Coding is not just a solution to problem solving but a power to
-            enhance our daily lives when applied correctly. Determination drives
-            me to relentlessly pursue solutions until I find the most effective
-            approach to a problem. One of the many beauties of software
-            development is that there is usually more than 1 language to use in
-            designing specific software and in those languages there are more
-            than a few avenues to approach the problem.
+            I am a passionate Junior Software Developer seeking an opportunity
+            to join the tech world. Problem solving is a skill I have always
+            valued, and software development provides diverse avenues to apply
+            it. Coding is not just a solution to problem solving but a powerful
+            tool to enhance daily lives when applied correctly. Determination
+            drives me to relentlessly pursue solutions until I find the most
+            effective approach to a problem. One of the many beauties of
+            software development is that there is usually more than 1 language
+            to use in designing specific software and in those languages there
+            are more than a few avenues to approach the problem.
           </p>
           <p>
             Continuous learning is very crucial as software developers as you
             can never fully master a language and there are always improvements
             that can be made in our code. Currently I mainly write code in
-            JavaScript but I am learning C# as I have always loved video games
-            and I would love the ability contribute to their production. Video
-            game development is an example of how much freedom software
-            development gives us and with great creativity we can make great
-            software.
+            JavaScript but I am expanding my knowledge with C# as I have always
+            loved video games and I would love the ability contribute to their
+            production. Video game development is an example of how much freedom
+            software development gives us and with great creativity we can make
+            great software.
           </p>
         </div>
       </section>
