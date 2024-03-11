@@ -56,7 +56,16 @@ const NavigationList = ({ isOpen, setIsOpen }) => {
           >
             Download CV
           </a>
-          <motion.a className="liItem">Contact</motion.a>
+          <Link
+            to={"/contactPage"}
+            onClick={() => {
+              setIsOpen(false);
+              scroll.scrollToTop();
+            }}
+            className="liItem"
+          >
+            Contact
+          </Link>
         </motion.ul>
       </motion.div>
     </motion.div>

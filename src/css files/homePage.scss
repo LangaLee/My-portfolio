@@ -69,13 +69,13 @@
     }
   }
 
-  .contactSection {
-  }
-
   .contactDiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 10vh;
+    h2 {
+      font-size: 25px;
+    }
     form {
       width: 70vw;
       height: 70vh;

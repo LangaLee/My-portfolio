@@ -37,36 +37,40 @@ const Contact = () => {
 
   return (
     <div className="contactDiv">
-      <form ref={form} onSubmit={sendEmail}>
-        <label htmlFor="name">Full Name</label>
-        <input
-          type="text"
-          id="name"
-          required={true}
-          autoComplete="off"
-          name="user_name"
-        />
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          required={true}
-          name="user_contact"
-          autoComplete="off"
-        />
-        <label htmlFor="message">Message</label>
-        <textarea
-          className="messageInput"
-          type="text"
-          name="message"
-          id="message"
-          required={true}
-          autoComplete="off"
-        />
-        <div>
-          <button>Submit</button>
-        </div>
-      </form>
+      <div></div>
+      <div>
+        {" "}
+        <form ref={form} onSubmit={sendEmail}>
+          <label htmlFor="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            required={true}
+            autoComplete="off"
+            name="user_name"
+          />
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            required={true}
+            name="user_contact"
+            autoComplete="off"
+          />
+          <label htmlFor="message">Message</label>
+          <textarea
+            className="messageInput"
+            type="text"
+            name="message"
+            id="message"
+            required={true}
+            autoComplete="off"
+          />
+          <div>
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

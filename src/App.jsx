@@ -14,6 +14,7 @@ import Projects from "./components/Projects";
 import NCNews from "./components/projects/NCNews";
 import Tipper from "./components/projects/Tipper";
 import Skills from "./components/skills";
+import ContactPage from "./components/contactPage";
 function App() {
   return (
     <div>
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Projects/NCNews" element={<NCNews />} />
         <Route path="/Projects/Tipper" element={<Tipper />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/contactPage" element={<ContactPage />} />
       </Routes>
     </div>
   );

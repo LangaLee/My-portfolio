@@ -60,9 +60,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="contactSection">
-        <Contact />
-      </section>
     </div>
   );
 };
