@@ -7,15 +7,17 @@
     height: 90vh;
   }
   .introSection {
+    height: 100vh;
     .introDiv {
       display: flex;
       flex-direction: column;
       h1 {
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 10px;
       }
 
       h2 {
+        margin-top: 0px;
         font-size: 20px;
       }
       p {
@@ -30,7 +32,7 @@
       flex-direction: column;
 
       h2 {
-        font-size: 50px;
+        font-size: 40px;
       }
       div {
         width: 60vw;
