@@ -18,13 +18,16 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_t26kb1p", "template_0b3v34g", form.current, {
-        publicKey: "NkLTkWW7sYmVSZIOi",
-      })
+      .sendForm(
+        process.env.REACT_APP_service,
+        process.env.REACT_APP_template,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_secret,
+        }
+      )
       .then(
         () => {
-          console.log("SUCCESS!");
-          console.dir();
           e.target[0].value = "";
           e.target[1].value = "";
           e.target[2].value = "";
