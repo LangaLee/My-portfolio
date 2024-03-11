@@ -1,136 +1,278 @@
-section {
-  margin-left: 2vw;
-  margin-top: auto;
-  height: 90vh;
-  scroll-snap-align: center;
-  padding-top: 5vh;
-  margin-left: 5vh;
-}
-.introSection {
-  .introDiv {
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    h1 {
-      font-size: 60px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 30px;
-    }
-    p {
-      width: 60vw;
-    }
+@media only screen and (max-width: 1500px) {
+  section {
+    margin-top: auto;
+    scroll-snap-align: center;
+    padding: 5%;
+    padding-top: 5vh;
   }
-}
-
-.projectSection {
-  font-size: 50px;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-
-    h2 {
-    }
-    div {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-  }
-  img {
-    width: 30vw;
-    margin-right: 2vw;
-    border: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    border-color: #ff3366;
-  }
-  .allProjects {
-    padding: 5px;
-    text-decoration: none;
-    background-color: #ff3366;
-    border-radius: 5px;
-    color: #070510;
-    font-size: 25px;
-    margin-left: 10%;
-  }
-  .allProjects:hover {
-    background-color: #070510;
-    color: #ff3366;
-  }
-}
-
-.contactSection {
-}
-
-.contactDiv {
-  display: flex;
-  flex-direction: row;
-  padding-top: 10vh;
-  form {
-    width: 70vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    label {
-      font-size: 20px;
-      font-weight: 400;
-      margin-top: 40px;
-    }
-    input {
-      color: whitesmoke;
-      background-color: #0d0338;
-      border: none;
-      border-radius: 5px;
-      font-size: 20px;
-      padding: 4px;
-    }
-    textarea {
-      color: whitesmoke;
-      background-color: #0d0338;
-      border: none;
-      border-radius: 5px;
-      font-size: 20px;
-      padding: 4px;
-    }
-    textarea:focus {
-      outline-width: 0;
-      border: solid;
-      border-radius: 2px;
-      border-color: #ff3366;
-    }
-    input:focus {
-      outline-width: 0;
-      border: solid;
-      border-radius: 2px;
-      border-color: #ff3366;
-    }
-
-    .messageInput {
-      height: 30%;
-    }
-
-    div {
-      margin-top: 20px;
+  .introSection {
+    .introDiv {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      button {
-        color: #070510;
-        background-color: #ff3366;
+      h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        width: 80vw;
+      }
+    }
+  }
+
+  .projectSection {
+    div {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 50px;
+      }
+      div {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        div {
+          width: 100%;
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+    }
+    img {
+      width: 60vw;
+      margin-bottom: 20px;
+      border: solid;
+      border-width: 2px;
+      border-radius: 5px;
+      border-color: #ff3366;
+    }
+    .allProjects {
+      padding: 5px;
+      text-decoration: none;
+      background-color: #ff3366;
+      border-radius: 5px;
+      color: #070510;
+      font-size: 20px;
+      margin-left: 10%;
+    }
+    .allProjects:hover {
+      background-color: #070510;
+      color: #ff3366;
+    }
+  }
+
+  .contactSection {
+  }
+
+  .contactDiv {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+    form {
+      width: 70vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 40px;
+      }
+      input {
+        color: whitesmoke;
+        background-color: #0d0338;
         border: none;
         border-radius: 5px;
-        width: 70px;
-        font-size: 15px;
+        font-size: 20px;
+        padding: 4px;
       }
-      button:hover {
-        cursor: pointer;
-        color: #ff3366;
-        background-color: #070510;
+      textarea {
+        color: whitesmoke;
+        background-color: #0d0338;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 4px;
+      }
+      textarea:focus {
+        outline-width: 0;
+        border: solid;
+        border-radius: 2px;
+        border-color: #ff3366;
+      }
+      input:focus {
+        outline-width: 0;
+        border: solid;
+        border-radius: 2px;
+        border-color: #ff3366;
+      }
+
+      .messageInput {
+        height: 30%;
+      }
+
+      div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        button {
+          color: #070510;
+          background-color: #ff3366;
+          border: none;
+          border-radius: 5px;
+          width: 70px;
+          font-size: 15px;
+        }
+        button:hover {
+          cursor: pointer;
+          color: #ff3366;
+          background-color: #070510;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1500px) {
+  section {
+    margin-left: 2vw;
+    margin-top: auto;
+    height: 90vh;
+    scroll-snap-align: center;
+    padding-top: 5vh;
+    margin-left: 5vh;
+  }
+  .introSection {
+    .introDiv {
+      padding-top: 10vh;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        width: 60vw;
+      }
+    }
+  }
+
+  .projectSection {
+    font-size: 50px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+
+      h2 {
+      }
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    img {
+      width: 30vw;
+      margin-right: 2vw;
+      border: solid;
+      border-width: 2px;
+      border-radius: 5px;
+      border-color: #ff3366;
+    }
+    .allProjects {
+      padding: 5px;
+      text-decoration: none;
+      background-color: #ff3366;
+      border-radius: 5px;
+      color: #070510;
+      font-size: 25px;
+      margin-left: 10%;
+    }
+    .allProjects:hover {
+      background-color: #070510;
+      color: #ff3366;
+    }
+  }
+
+  .contactSection {
+  }
+
+  .contactDiv {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+    form {
+      width: 70vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 40px;
+      }
+      input {
+        color: whitesmoke;
+        background-color: #0d0338;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 4px;
+      }
+      textarea {
+        color: whitesmoke;
+        background-color: #0d0338;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 4px;
+      }
+      textarea:focus {
+        outline-width: 0;
+        border: solid;
+        border-radius: 2px;
+        border-color: #ff3366;
+      }
+      input:focus {
+        outline-width: 0;
+        border: solid;
+        border-radius: 2px;
+        border-color: #ff3366;
+      }
+
+      .messageInput {
+        height: 30%;
+      }
+
+      div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        button {
+          color: #070510;
+          background-color: #ff3366;
+          border: none;
+          border-radius: 5px;
+          width: 70px;
+          font-size: 15px;
+        }
+        button:hover {
+          cursor: pointer;
+          color: #ff3366;
+          background-color: #070510;
+        }
       }
     }
   }

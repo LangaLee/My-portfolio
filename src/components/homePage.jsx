@@ -23,7 +23,6 @@ const HomePage = () => {
             designing specific software and in those languages there are more
             than a few avenues to approach the problem.
           </p>
-
           <p>
             Continuous learning is very crucial as software developers as you
             can never fully master a language and there are always improvements
@@ -49,13 +48,15 @@ const HomePage = () => {
               <img src={TipperImage} alt="Tipper homepage screenshot" />
             </Link>
 
-            <Link
-              className="allProjects"
-              to={"/Projects"}
-              onClick={() => scroll.scrollToTop()}
-            >
-              All Projects
-            </Link>
+            <div>
+              <Link
+                className="allProjects"
+                to={"/Projects"}
+                onClick={() => scroll.scrollToTop()}
+              >
+                All Projects
+              </Link>
+            </div>
           </div>
         </div>
       </section>
