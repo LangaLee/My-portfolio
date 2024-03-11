@@ -7,7 +7,7 @@ import Contact from "./contact";
 const HomePage = () => {
   return (
     <div>
-      <section>
+      <section className="introSection">
         <div className="introDiv">
           <h1>Langa Dlamini</h1>
           <h2>Junior Software Developer</h2>
@@ -22,7 +22,7 @@ const HomePage = () => {
           </p>
         </div>
       </section>
-      <section className="projects">
+      <section className="projectSection">
         <div>
           <h2>Projects</h2>
           <div>
@@ -45,7 +45,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="contactSection">
         <Contact />
       </section>
     </div>

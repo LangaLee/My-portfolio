@@ -1,38 +1,41 @@
 section {
   margin-left: 2vw;
+  margin-top: auto;
   height: 90vh;
   scroll-snap-align: center;
   padding-top: 5vh;
   margin-left: 5vh;
 }
-.introDiv {
-  display: flex;
-  flex-direction: column;
-  h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-  }
+.introSection {
+  .introDiv {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
 
-  h2 {
-    font-size: 30px;
-  }
-  p {
-    width: 60vw;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      width: 60vw;
+    }
   }
 }
 
-.projects {
-  padding-top: 10vh !important;
+.projectSection {
   font-size: 50px;
+
   div {
     display: flex;
     flex-direction: column;
     width: 90vw;
+
     h2 {
-      margin-top: 0px;
     }
     div {
-      margin-top: 5%;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -41,6 +44,10 @@ section {
   img {
     width: 30vw;
     margin-right: 2vw;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #ff3366;
   }
   .allProjects {
     padding: 5px;
@@ -57,19 +64,22 @@ section {
   }
 }
 
+.contactSection {
+}
+
 .contactDiv {
   display: flex;
   flex-direction: row;
   padding-top: 10vh;
   form {
     width: 70vw;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    // background-color: aqua;
     label {
       font-size: 20px;
       font-weight: 400;
+      margin-top: 40px;
     }
     input {
       color: whitesmoke;
@@ -101,7 +111,7 @@ section {
     }
 
     .messageInput {
-      height: 20%;
+      height: 30%;
     }
 
     div {
@@ -115,9 +125,12 @@ section {
         border: none;
         border-radius: 5px;
         width: 70px;
+        font-size: 15px;
       }
       button:hover {
         cursor: pointer;
+        color: #ff3366;
+        background-color: #070510;
       }
     }
   }

@@ -2,7 +2,7 @@ import SourceCode from "../../reusable components/sourceCode";
 import TipperImage from "../../../images/Tipper.png";
 const Tipper = () => {
   return (
-    <section className="projectSection">
+    <section className="projectsSection">
       <div>
         <div className="projectDiv">
           <div>

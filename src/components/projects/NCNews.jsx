@@ -3,7 +3,7 @@ import NewsImage from "../../../images/Nc news.png";
 const NCNews = () => {
   return (
     <div>
-      <section className="projectSection">
+      <section className="projectsSection">
         <div>
           <div className="projectDiv">
             <div>

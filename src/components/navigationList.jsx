@@ -36,8 +36,17 @@ const NavigationList = ({ isOpen, setIsOpen }) => {
           >
             HomePage
           </Link>
-          <motion.a className="liItem">Plans</motion.a>
-          <motion.a className="liItem">Contact</motion.a>
+          <Link className="liItem">Plans</Link>
+          <Link
+            to={"/"}
+            onClick={() => {
+              setIsOpen(false);
+              scroll.scrollToBottom();
+            }}
+            className="liItem"
+          >
+            Contact
+          </Link>
           <motion.a className="liItem">About Me</motion.a>
         </motion.ul>
       </motion.div>
