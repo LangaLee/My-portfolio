@@ -32,7 +32,10 @@ const Navbar = () => {
         </div>
 
         <div className="socialLinks">
-          <SocialIcon url="www.linkedin.com/in/langa-dlemz" target="_blank" />
+          <SocialIcon
+            url="https://www.linkedin.com/in/langa-dlemz/"
+            target="_blank"
+          />
 
           <SocialIcon
             url="https://www.instagram.com/oldschool_is200/"
