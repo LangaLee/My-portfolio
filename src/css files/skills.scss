@@ -1,11 +1,26 @@
 @media only screen and (max-width: 1500px) {
-  section {
+  .skillsSection {
     height: 100vh;
+    padding-top: 100px;
+    h3 {
+      margin-bottom: 0px;
+    }
+    ul {
+      margin-top: 5px;
+    }
   }
 }
 
 @media only screen and (min-width: 1500px) {
-  section {
+  .skillsSection {
     height: 100vh;
+    padding-top: 10vh;
+    h3 {
+      font-size: 25px;
+      margin-bottom: 0px;
+    }
+    ul {
+      margin-top: 10px;
+    }
   }
 }
