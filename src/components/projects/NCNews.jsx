@@ -16,7 +16,7 @@ const NCNews = () => {
                 that they have posted, liking/disliking articles and more.
               </p>
               <SourceCode
-                link="https://news-for-gen-z.netlify.app/"
+                link="https://newsforgenz.netlify.app/"
                 value="Hosted app"
               />
               <p>
